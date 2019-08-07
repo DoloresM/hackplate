@@ -11,10 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "cd client && npm install & npm run build"
   },
-  "keywords":["heroku"],
-  "engines":{
-    "node": "10.x"
-  },
+
 
 
   "author": "Dolores Macauley",
