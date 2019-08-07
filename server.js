@@ -5,22 +5,22 @@ const morgan = require('morgan');
 const path = require("path");
 
 
-  const db = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : 'password',
-    database : 'hackplate',
-    multipleStatement: true
-
-  });
-
-  db.connect((err)=>{
-    if(err){
-      console.error("hi", err);
-    } else {
-      console.log("hackplate connected");
-    }
-  });
+  // const db = mysql.createConnection({
+  //   host     : 'localhost',
+  //   user     : 'root',
+  //   password : 'password',
+  //   database : 'hackplate',
+  //   multipleStatement: true
+  //
+  // });
+  //
+  // db.connect((err)=>{
+  //   if(err){
+  //     console.error("hi", err);
+  //   } else {
+  //     console.log("hackplate connected");
+  //   }
+  // });
 
   //Middleware
 app.use(morgan('dev'));
