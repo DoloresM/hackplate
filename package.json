@@ -2,7 +2,7 @@
   "name": "hackmyplate",
   "version": "1.0.0",
   "description": "plant based app",
-  "main": "server.js",
+  "main": "./client/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
