@@ -13,7 +13,7 @@
   },
   "keywords":["heroku"],
   "engines":{
-    "node": "10x"
+    "node": "10.x"
   },
 
 
