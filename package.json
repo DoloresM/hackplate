@@ -12,7 +12,7 @@
     "buildFront": "cd client && npm run build"
   },
   "keywords":["heroku"],
-  "engines":"node": "10x"
+  "engines":"node": "10x",
 
 
   "author": "Dolores Macauley",
