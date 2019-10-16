@@ -16,7 +16,9 @@ class App extends Component {
   getRecipe = async (e) => {
     const recipe = `vegan ${e.target.elements.recipe.value}`;
     e.preventDefault();
+    //inject the http request in the template literal using fetch() : making the API call
     const gift_call = await fetch
+    //prefix api with faux site to trick food2fork site from accepting calls from local server
     (`https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/search?key=${GIFT}&q=${recipe}`);
     {/*returning all data in gift_call and storing the json v in result*/}
     const result = await gift_call.json();
@@ -30,7 +32,6 @@ class App extends Component {
     {/*return the data back to JSON format*/}
     const recipes = JSON.parse(json);
     this.setState({recipes:recipes});
-
   }
 
   componentDidUpdate = () =>{

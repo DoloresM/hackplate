@@ -14,6 +14,7 @@ const Recipes = (props) => (
                    <div>
                       <h5>
                       {recipe.title.length < 20 ? `${recipe.title}`:
+                      // use substring to trim title between 0 - 25 characters & add ellipsis
                       `${recipe.title.substring(0, 25)} ...`}
                       </h5>
                       <p>Publisher: <span>
